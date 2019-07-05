@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="601.0" prefWidth="430.0" style="-fx-background-color: #4b1212; -fx-background-image: \\Vieww\emoji.jpg;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllerr.MainController">
+   <children>
+      <Accordion layoutX="142.0" layoutY="66.0" />
+      <Accordion layoutX="117.0" layoutY="85.0" />
+      <VBox fx:id="vboxID" layoutX="141.0" layoutY="113.0" prefHeight="64.0" prefWidth="267.0" visible="false">
+         <children>
+            <TextField promptText="To" />
+            <TextField promptText="Subject" />
+         </children>
+      </VBox>
+      <Button fx:id="ComposeID" layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#Compose" prefHeight="39.0" prefWidth="111.0" text="Compose" textFill="#641f15">
+         <font>
+            <Font name="Century" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="ImageID" fitHeight="122.0" fitWidth="142.0" layoutX="150.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Gmail_Icon.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="textAreaID" layoutX="141.0" layoutY="187.0" prefHeight="374.0" prefWidth="267.0" />
+      <Button fx:id="SendButtonID" disable="true" layoutX="153.0" layoutY="517.0" mnemonicParsing="false" onAction="#Send" text="Send" textFill="#4b1212">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="logoutID" layoutX="353.0" layoutY="29.0" mnemonicParsing="false" onAction="#logout" text="LogOut" textFill="#b20707">
+         <font>
+            <Font name="Trebuchet MS" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
